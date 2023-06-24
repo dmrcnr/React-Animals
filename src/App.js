@@ -26,13 +26,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Animal App</h1>
-      <div className="container">
-        <button type="button" name="addAnimalBtn" onClick={handleClick}>
-          Add animal
-        </button>
-        <div>{renderedAnimals}</div>
-      </div>
+      <button type="button" name="addAnimalBtn" onClick={handleClick}>
+        Add animal
+      </button>
+      <div className="animal-list">{renderedAnimals}</div>
     </div>
   );
 }
